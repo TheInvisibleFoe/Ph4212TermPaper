@@ -80,10 +80,14 @@ Again, resorting to the example described in [[Quantum Heat and Work - TLS Examp
 $$
 	\frac{p_{2}}{p_{1}} = \frac{\Gamma_{\uparrow}}{\Gamma_{\downarrow}}
 $$
+
+^c1ed26
 For this to be true thermal bath, we must have this steady-state population ratio to be exactly the Boltzmann distribution. Therefore, the jump rates are now fixed nicely as,
 $$
 	\frac{\Gamma_{\uparrow}}{\Gamma_{\downarrow}} = \exp\left( - \frac{E}{k_{B}T} \right)
 $$
+
+^4d7504
 (reminder, $E$ is the energy gap of this TLS)
 
 This is called the **Kubo-Martin-Schwinger (KMS)** condition for detailed balance. As long as we have $T>0$, the downward rate $\Gamma_{\downarrow}$ is always higher than the upward rate $\Gamma_{\uparrow}$. This makes sense - as the downward transition can happen due to both stimulated *and* spontaneous emission.
