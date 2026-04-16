@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<bcf:controlfile version="3.11" bltxversion="3.20" xmlns:bcf="https://sourceforge.net/projects/biblatex">
+<bcf:controlfile version="3.11" bltxversion="3.21" xmlns:bcf="https://sourceforge.net/projects/biblatex">
   <!-- BIBER OPTIONS -->
   <bcf:options component="biber" type="global">
     <bcf:option type="singlevalued">
@@ -514,6 +514,7 @@
     <bcf:option datatype="string">alphaothers</bcf:option>
     <bcf:option datatype="string">sortalphaothers</bcf:option>
     <bcf:option datatype="string">presort</bcf:option>
+    <bcf:option datatype="string">citepagerange</bcf:option>
     <bcf:option datatype="string">texencoding</bcf:option>
     <bcf:option datatype="string">bibencoding</bcf:option>
     <bcf:option datatype="string">sortingtemplatename</bcf:option>
@@ -2372,34 +2373,6 @@
     <bcf:datasource type="file" datatype="bibtex" glob="false">refs.bib</bcf:datasource>
   </bcf:bibdata>
   <bcf:section number="0">
-    <bcf:citekey order="1" intorder="1">FPU</bcf:citekey>
-    <bcf:citekey order="2" intorder="1">Ford1992</bcf:citekey>
-    <bcf:citekey order="3" intorder="1">Berman2005</bcf:citekey>
-    <bcf:citekey order="4" intorder="1">Ford1992</bcf:citekey>
-    <bcf:citekey order="5" intorder="1">Berman2005</bcf:citekey>
-    <bcf:citekey order="6" intorder="1">Ford1992</bcf:citekey>
-    <bcf:citekey order="7" intorder="1">Berman2005</bcf:citekey>
-    <bcf:citekey order="8" intorder="1">Ford1992</bcf:citekey>
-    <bcf:citekey order="9" intorder="1">Berman2005</bcf:citekey>
-    <bcf:citekey order="10" intorder="1">Ford1992</bcf:citekey>
-    <bcf:citekey order="11" intorder="1">Berman2005</bcf:citekey>
-    <bcf:citekey order="12" intorder="1">Ford1992</bcf:citekey>
-    <bcf:citekey order="13" intorder="1">Berman2005</bcf:citekey>
-    <bcf:citekey order="14" intorder="1">Ford1992</bcf:citekey>
-    <bcf:citekey order="15" intorder="1">Ford1992</bcf:citekey>
-    <bcf:citekey order="16" intorder="1">hhwolfram</bcf:citekey>
-    <bcf:citekey order="17" intorder="1">hhwolfram</bcf:citekey>
-    <bcf:citekey order="18" intorder="1">tucktsingou</bcf:citekey>
-    <bcf:citekey order="19" intorder="1">tucktsingou</bcf:citekey>
-    <bcf:citekey order="20" intorder="1">IzrailevChirikov1966</bcf:citekey>
-    <bcf:citekey order="21" intorder="1">IzrailevChirikov1966</bcf:citekey>
-    <bcf:citekey order="22" intorder="1">IzrailevChirikov1966</bcf:citekey>
-    <bcf:citekey order="23" intorder="1">IzrailevChirikov1966</bcf:citekey>
-    <bcf:citekey order="24" intorder="1">Palais</bcf:citekey>
-    <bcf:citekey order="25" intorder="1">Zabusky1965</bcf:citekey>
-    <bcf:citekey order="26" intorder="1">Huang</bcf:citekey>
-    <bcf:citekey order="27" intorder="1">Khinchin2013</bcf:citekey>
-    <bcf:citekey order="28" intorder="1">Ruelle1999</bcf:citekey>
   </bcf:section>
   <!-- SORTING TEMPLATES -->
   <bcf:sortingtemplate name="none">
@@ -2411,14 +2384,4 @@
     </bcf:sort>
   </bcf:sortingtemplate>
   <!-- DATALISTS -->
-  <bcf:datalist section="0"
-                name="none/global//global/global/global"
-                type="entry"
-                sortingtemplatename="none"
-                sortingnamekeytemplatename="global"
-                labelprefix=""
-                uniquenametemplatename="global"
-                labelalphanametemplatename="global"
-                namehashtemplatename="global">
-  </bcf:datalist>
 </bcf:controlfile>

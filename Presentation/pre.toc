@@ -1,10 +1,5 @@
-\beamer@sectionintoc {1}{History}{2}{0}{1}
-\beamer@sectionintoc {2}{Problem Setup}{11}{0}{2}
-\beamer@sectionintoc {3}{The Problem with The Problem}{25}{0}{3}
-\beamer@sectionintoc {4}{Numerical Simulation}{28}{0}{4}
-\beamer@sectionintoc {5}{Inquisitions}{34}{0}{5}
-\beamer@sectionintoc {6}{Resolutions??}{61}{0}{6}
-\beamer@sectionintoc {7}{Connection to Statistical Mechanics}{104}{0}{7}
-\beamer@subsectionintoc {7}{1}{Ergodicity}{107}{0}{7}
-\beamer@subsectionintoc {7}{2}{Energy Equipartition}{120}{0}{7}
-\beamer@sectionintoc {8}{Conclusions}{122}{0}{8}
+\beamer@sectionintoc {1}{Introduction}{2}{0}{1}
+\beamer@sectionintoc {2}{MASERs}{7}{0}{2}
+\beamer@sectionintoc {3}{Quantum Heat Engines}{8}{0}{3}
+\beamer@sectionintoc {4}{Scovil Schulz-DuBois(SSD) Model}{9}{0}{4}
+\beamer@sectionintoc {5}{Experimental Realization}{26}{0}{5}
