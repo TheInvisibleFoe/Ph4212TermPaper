@@ -5,8 +5,9 @@
 % \usepackage{graphicx}
 \usepackage{subcaption}
 \usepackage[most]{tcolorbox}
-\usepackage[backend=biber,sorting=none]{biblatex}
-\addbibresource{refs.bib}
+\usepackage{xcolor}
+% \usepackage[backend=,sorting=none]{biblatex}
+% \addbibresource{refs.bib}
 \usepackage{tikz}
 % \usepackage{enumitem}
 % \usepackage{cmbright}
@@ -25,7 +26,7 @@
 \hfill\usebeamertemplate***{navigation symbols}
 \insertframenumber{}/\inserttotalframenumber\hspace{10em}} 
 % meta-data
-\title{The Three Level MASER as  \\ a Quantum Heat Engine}
+\title{MASERs and Quantum Heat Engines}
 \subtitle{PH4104 Term Project}
 \author{\scriptsize \href{}{Sabarno Saha(22MS037)} \and \href{}{Diptanuj Sarkar(22MS038)} \and \href{}{Debayan Sarkar(22MS002)}}
 \date{\today}
@@ -39,7 +40,7 @@
         \begin{itemize}
             \item MASER: Microwave Amplification by Stimulated Emission of Radiation. \pause
             \item Quantum Heat Engine: A device that converts heat into work using quantum systems. \pause 
-            \item Scovil Schulz-DuBois(SSD) Model: A theoretical framework for understanding the operation of quantum heat engines, particularly in the context of MASERs.
+            \item Scovil Schulz-DuBois(SSD) Model: The original quantum heat engine done with respect to MASERs.
         \end{itemize}
         \pause
 
@@ -49,9 +50,209 @@
 
     \section{MASERs}
 
+    \begin{frame}
+        \frametitle{The Three-Level MASER}
+        Let us define three energy levels: $E_{1}<E_{2}<E_{3}$. The total number of atoms in a particular state is given by $N_{i}$, where $i$ is the index for that level. Note that we fix the number of atoms available as:
+        $
+        N = N_{1}+N_{2}+N_{3}
+        $
 
+        There are two distinct types of transitions:
+        \begin{itemize}
+            \item  \textbf{Stimulated Transitions} (denoted by $W$ here): These are stimulated by external electromagnetic fields. $W_{p}$ is the pumping rate between the levels $1$ and $3$. Since stimulated emission and absorption probabilities are symmetric, we have $W_{13} = W_{31} = W_{p}$. 
+            \item  \textbf{Intrinsic Relaxation Rates} (denoted here with $\Gamma$): These are the transition in the system that aim to restore thermal equilibrium. In a solid-state system at microwave frequencies, spontaneous photon emission (Given by the Einstein $A$ coefficient, which scales as $\omega^3$, $\omega$ being the frequency associated with the transition) is for all practical purposes nearly zero. Therefore, these $\Gamma_{ij}$ relaxation process are almost entirely non-radiative in character.
+        \end{itemize}
 
+        \end{frame}
+    \begin{frame}
+        \frametitle{Rate Equations}
+               
+        \begin{tcolorbox}[colback=red!5!white,colframe=red!75!black,title= Rate Equations]
+        \begin{align}
+            \frac{dN_{3}}{dt} &=  W_{p}(N_{1} - N_{3}) - (\Gamma_{32} + \Gamma_{31}) N_{3} + \Gamma_{23}N_{2} + \Gamma_{13}N_{1}\\
+            \frac{dN_{2}}{dt} &= \Gamma_{32}N_{3} - (\Gamma_{23}+\Gamma_{21})N_{2}+\Gamma_{12}N_{1} \\
+            \frac{dN_{1}}{dt} &= W_{p}(N_{3}-N_{1})+\Gamma_{31}N_{3}+\Gamma_{21}N_{2}-(\Gamma_{13}+\Gamma_{12})N_{1}
+        \end{align}
+        where $N_{i}$ is the population of the $i$-th energy level. It also has the implicit constraint that $N = N_{1}+N_{2}+N_{3}$, where $N$ is the total number of atoms in the system.
+        \end{tcolorbox}
+        \end{frame}
+    \begin{frame}
+        \frametitle{Steady-State and Pump Saturation}
+        Let us evaluate the system at steady-state (i.e. assume $\frac{dN_{i}}{dt} = 0 \forall i$). 
+
+        Now, we apply a \textbf{strong} pump field - this means that the stimulated pump rate is much greater than the natural relaxation rates ($W_{p}\gg \Gamma_{ij}$). Notice that the only way that the $N_{3}$ rate equation would ever be balanced under both of these assumptions would be if $N_{1} \approx N_{3}$ and thus the first term on the RHS vanishes (and takes along the large $W_{p}$ factor). Let us define $N_{1} \approx N_{3} \equiv n$.
+
+        Substituting these conditions into the rate equation for $N_{2}$, we get:
+        $$
+        0 = \Gamma_{32}n - (\Gamma_{23}+\Gamma_{21})N_{2} + \Gamma_{12}n
+        $$
+
+        Rearranging,
+        $$
+        N_{2} = n \frac{\Gamma_{32}+\Gamma_{12}}{\Gamma_{21}+\Gamma_{23}}
+        $$
+
+    \end{frame}
+    
+    \begin{frame}
+        \frametitle{Population Inversion}
+        The aim is to amplify a signal across the $E_{2}\to E_{1}$ transition in this system. The necessary condition for this stimulated emission to outpace absorption is $\Delta N = N_{2}-N_{1} > 0$ (the usual population inversion condition). Plugging in the expressions derived above,
+        $$
+        \Delta N = N_{2} - n = n\left[ \frac{\Gamma_{23}+\Gamma_{12}}{\Gamma_{21}+\Gamma_{23}} - 1 \right]
+        $$
+    
+        This simplifies to:
+        $$
+        \Delta N = n\left[ \frac{\Gamma_{32}+\Gamma_{12}-\Gamma_{21}-\Gamma_{23}}{\Gamma_{21}+\Gamma_{23}} \right]
+        $$
+    
+        For the $\Delta N>0$ condition to be satified, we must have:
+        $$
+        \Gamma_{32}+\Gamma_{12} > \Gamma_{21}+\Gamma_{23}
+        $$
+    \end{frame}
+
+\begin{frame}
+    \frametitle{Physical Motivations}
+        \begin{itemize}
+            \item The LHS of the above inequality represents the total rate of transitions that populate the $E_{2}$ level, from both the $E_{3}$ and $E_{1}$ levels. The RHS represents the total rate of transitions that depopulate the $E_{2}$ level, to both the $E_{3}$ and $E_{1}$ levels. \pause
+            \item Therefore, the condition for population inversion can be interpreted as the requirement that the total rate of transitions populating the $E_{2}$ level must be greater than the total rate of transitions depopulating the $E_{2}$ level. \pause
+            \item In modern implementations of the 3 state Laser, $\Gamma_{32}$ is quite large and $\Gamma_{23}$ is quite small, because the $\ket{2}$ level is typically a metastable state. This means that the condition for population inversion is easily satisfied.
+        \end{itemize}
+    \end{frame}
+
+\begin{frame}
+    \frametitle{MASERs vs LASERs}
+    \begin{itemize}
+        \item Both MASERs and LASERs operate on the principle of stimulated emission, where an incoming photon stimulates an excited atom to emit a photon of the same frequency, phase, and direction. \pause
+        \item The main difference between MASERs and LASERs is the frequency of the emitted radiation. MASERs emit microwave radiation, while LASERs emit visible or infrared light. \pause
+        \item The Energy gaps in the MASER system are much smaller than those in the LASER system, which is why thermal fluctuations cause significant problems in MASERs and need to be cryogenically cooled to near absolute zero. \pause
+        \end{itemize}
+    \end{frame}
+
+\begin{frame}
+    \frametitle{Stimulated Emission}
+    \begin{itemize}
+        \item Stimulated Emission is an interesting phenomena, where a system decays from an energetic state to a less energetic state due to an external photon coupling to it. The crucial phenomena is that the photon radiated from the system due to this event is \textbf{identical to the original external photon} in all ways. \pause
+        
+        \item We present the semiclassical derivation for a two-level system, with energy levels $E_{1}$ and $E_{2}$, where $E_{2} > E_{1}$. 
+        
+        \item Consider the free Hamiltonian of the system to be $H_{0}$, with the eigensystem ${\ket{1}, E_{1}}$ and ${\ket{2}, E_{2}}$. This atom is then hit with a monochromatic linearly polarized electromagnetic wave, which we treat classically. We assume that the wavelength of the EM wave is much larger than the size of the atom, so we can ignore spatial variations in the field across the atom. This is called the \textbf{Dipole Approximation}. \pause
+        
+        \item The interaction Hamiltonian between the atom and the EM wave can be written as:
+        \begin{align*}
+            H_{I} = -\vb{d} \cdot \vb{E}(t) = -\vb{d} \cdot \vb{E}_{0} \cos(\omega t)
+        \end{align*}
+        
+    \end{itemize}
+
+    \end{frame}
+
+    \begin{frame}
+        \frametitle{Stimulated Emission}
+        \begin{itemize}
+            \item The dipole interaction creates off-diagonal terms in the Hamiltonian, which can cause transitions between the two energy levels. The transition probability from $\ket{2}$ to $\ket{1}$ due to the interaction with the EM wave can be calculated using time-dependent perturbation theory. \pause
+            \item Time dependent perturbation theory tells us that the transition probability is proportional to two oscillatory terms: one with frequency $\omega_{21} + \omega$ and one with frequency $\omega_{21} - \omega$, where $\omega_{21} = (E_{2} - E_{1})/\hbar$ is the natural transition frequency of the atom. \pause
+            \item Assuming that the EM wave is near-resonant with the atomic transition (i.e. $\omega \approx \omega_{21}$), the fast oscillating term with frequency $\omega_{21} + \omega$ can be integrated out over a small time interval, leaving us with the term that oscillates with frequency $\omega_{21} - \omega$. This is called the \textbf{Rotating Wave Approximation}. \pause
+            \item Using these two approximations, we find that the transition probability from $\ket{2}$ to $\ket{1}$ is proportional to the intensity of the EM wave, which is a hallmark of stimulated emission.
+        \end{itemize}
+    \end{frame}
     \section{Quantum Heat Engines}
+    \begin{frame}
+        \frametitle{Energy Levels}
+        \begin{itemize}
+            \item One crucial difference between classical and quantum heat engines is that in a quantum heat engine, the working substance is a quantum system with discrete energy levels, rather than a classical system with continuously varying energy. \pause
+            \item This means that the thermodynamic processes in a quantum heat engine involve transitions between discrete energy levels. This is similar to the transitions between energy levels in a MASER, which is why the SSD model is a natural example of a quantum heat engine. \pause
+            \item As a result, fluctuations in the system manifest as transitions between these discrete energy levels. 
+        \end{itemize}
+
+        One can in general Manipulate these energy levels by applying external fields, which forms the basis of work extraction in a quantum heat engine.
+    \end{frame}
+
+    \begin{frame}
+        \frametitle{Thermal Reservoirs}
+        \begin{itemize}
+            \item In a quantum heat engine, the system is coupled to thermal reservoirs that can exchange energy with the system. These reservoirs are typically modeled as large collections of quantum systems that are in thermal equilibrium at a certain temperature. \pause
+            \item The coupling between the system and the reservoirs allows for the exchange of energy in the form of heat, which is essential for the operation of the heat engine. \pause
+            \item One common example of a thermal reservoir is a large collection of harmonic oscillators at a fixed temperature. This model is often used to describe the environment in which the quantum system is embedded, for example a three level system in an optical cavity coupled to the electromagnetic field modes of the cavity. 
+        \end{itemize}
+    \end{frame}
+
+    \begin{frame}
+        \frametitle{Thermal Reservoirs}
+        An example of a system coupled to a thermal reservoir is a two-level atom coupled to the electromagnetic field modes of an optical cavity. This is similar to the MASER system, where the three-level system is coupled to two thermal reservoirs (the hot and cold reservoirs) that allow for the exchange of energy in the form of heat, and the cavity mode allows for the exchange of energy in the form of work.
+
+    \end{frame}
+
+    \begin{frame}
+        \frametitle{Density Matrix Formalism}
+        \begin{itemize}
+            \item To properly describe the dynamics of a quantum system that is not in isolation, we need to use the density matrix formalism. This allows us to describe the state of the system as a statistical mixture of pure states, which is necessary when the system is coupled to a thermal reservoir. \pause
+            \item The density matrix $\rho$ of a quantum system is defined as:
+            \begin{align*}
+                \rho = \sum_{i} p_{i} \ket{\psi_{i}}\bra{\psi_{i}}
+            \end{align*}
+            where $p_{i}$ is the probability of the system being in the pure state $\ket{\psi_{i}}$. \pause
+            \item The density matrix allows us to calculate expectation values of observables, using the simple formula:
+            \[
+                \expval{\hat{O}} = \Tr(\rho \hat{O})
+            \]
+        \end{itemize}
+    \end{frame}
+
+    \begin{frame}
+        \frametitle{Quantum Heat and Work}
+        \begin{itemize}
+            \item To properly develop the concept of a quantum heat engine, we need to define what we mean by heat and work in a quantum context. \pause
+            \item To do that let us assume, that the first law of thermodynamics holds in the quantum regime, which means that the change in internal energy of the system is equal to the heat absorbed from the reservoir minus the work done by the system on its surroundings. \pause
+            \item The average energy of the system can be calculated using the density matrix as:
+            \begin{align*}
+                \expval{E} = \Tr(\rho H)
+            \end{align*}
+            where $H$ is the Hamiltonian of the system. \pause
+            \item The change in internal energy can be expressed as:
+            \begin{align*}
+                d\expval{E} = \Tr(d\rho H) + \Tr(\rho dH)
+            \end{align*}
+            \end{itemize}
+    \end{frame}
+
+
+    \begin{frame}
+        \frametitle{Quantum Heat and Work}
+        \begin{itemize}
+            \item Thermodynamically Work was done changing volumes using a piston, which means that work was done by changing the Hamiltonian of the system. Therefore, we can identify the work done by the system as:
+            \begin{align*}
+                \delta W = -\Tr(\rho dH)
+            \end{align*} \pause
+            \item Heat, on the other hand, was done by allowing the system to exchange energy with the thermal reservoir, which means that heat was done by changing the state of the system. Therefore, we can identify the heat absorbed by the system as the change in populations of the energy levels:
+            \begin{align*}
+                \delta Q = \Tr(d\rho H)
+            \end{align*}
+            \end{itemize}
+    \end{frame}
+    \begin{frame}
+        \frametitle{Open Quantum Systems}
+        \begin{itemize}
+            \item These definitions of heat and work are quite arbitrary and use the assumption that the first law of thermodynamics holds in the quantum regime. To properly describe the dynamics of a quantum system that is coupled to a thermal reservoir, we need to use the theory of open quantum systems. \pause
+            \item Similar to the Einstein Rate Equations, the dynamics of the density matrix of an open quantum system can be described by a master equation, which is a differential equation that describes how the density matrix evolves in time. \pause
+            \item The most common form of the master equation is the Lindblad Master Equation, which is given by:
+            \begin{align*}
+                \pdv{\rho_S}{t} = -\frac{i}{\hbar}[H_S, \rho_S] + \sum_{k} \gamma_k \left( L_k \rho_S L_k^{\dagger} - \frac{1}{2} \{L_k^{\dagger} L_k, \rho_S\} \right)
+            \end{align*}
+             where $H_S$ is the Hamiltonian of the system, $\gamma_k$ are the rates of the different dissipative processes, and $L_k$ are the Lindblad operators that describe the different jumps in the system due to the coupling to the reservoir. 
+
+        \end{itemize}
+    \end{frame}
+    \begin{frame}
+        \frametitle{Open Quantum Systems}
+        \begin{itemize}
+             \item We shall not dwell on this much further, since the Lindblad Master Equation is a quite complex topic and requires a lot of background in quantum mechanics and open quantum systems to properly understand. However, it is important to note that the Lindblad Master Equation provides a rigorous framework for describing the dynamics of open quantum systems, and is essential for understanding the operation of quantum heat engines.
+             \item The Model we are going to describe now can also be formulated in this formalism, which can give us much more insight into the dynamics of the system and the thermodynamic processes involved.
+        \end{itemize}
+    \end{frame}
+
+    % This should take some pages to explain the Lindblad Master Equation.
 
 
     \section{Scovil Schulz-DuBois(SSD) Model}
@@ -68,14 +269,12 @@
     \begin{frame}
         \frametitle{The Model}
         \begin{itemize}
-            \item The SSD considers a three-level system with energy levels $E_1 < E_2 < E_3$. \pause
             \item The characteristic frequencies of the transitions are defined as:
             \begin{align*}
                 \omega_{31} &= \omega_h = \frac{E_3 - E_1}{\hbar} \\
                 \omega_{21} &= \omega_c = \frac{E_2 - E_1}{\hbar} \\ 
                 \omega_{32} &= \nu = \frac{E_3 - E_2}{\hbar}
             \end{align*} \pause
-            \item The system is coupled to two thermal reservoirs: a hot reservoir at temperature $T_h$ and a cold reservoir at temperature $T_c$. \pause
             \item The transition $\ket{3} \leftrightarrow \ket{1}$ is coupled to the hot reservoir, while the transition $\ket{2} \leftrightarrow \ket{1}$ is coupled to the cold reservoir. 
         \end{itemize}
     \end{frame} 
@@ -84,8 +283,8 @@
         \frametitle{The Model}
         \begin{itemize}
             \item There is a filter that allows only frequencies near the vicinity of $\omega_{h}$ to be absorbed from the hot reservoir and only frequencies near the vicinity of $\omega_{c}$ to be absorbed by the cold reservoir. \pause
-            \item In this model, for every photon of frequency $\omega_{h}$ absorbed from the hot reservoir, a photon of frequency $\omega_{c}$ is emitted into the cold reservoir, and a photon of frequency $\omega_{32}$ is emitted as work. \pause
-            \item The engine operates in a cycle, where the system absorbs heat from the hot reservoir(allowing transitions with frequency $\omega_{h}$), performs work(emission with frequency $\omega_{32}$), and releases heat(allowing transitions with frequency $\omega_{c}$) to the cold reservoir.
+            \item In this model, for every photon of frequency $\omega_{h}$ absorbed from the hot reservoir, a photon of frequency $\omega_{c}$ is emitted into the cold reservoir, and a coherent photon of frequency $\nu$ is emitted as work. \pause
+            \item The engine operates in a cycle, where the system absorbs heat from the hot reservoir(allowing transitions with frequency $\omega_{h}$), performs work(emission with frequency $\nu$), and releases heat(allowing transitions with frequency $\omega_{c}$) to the cold reservoir.
         \end{itemize}
     \end{frame}
     
@@ -109,51 +308,109 @@
             \end{align*} \pause
             \item For stimulated emission to occur, we require a population inversion, which means that the population of the higher energy level must be greater than that of the lower energy level. 
         \end{itemize}
-
     \end{frame}
+    
     \begin{frame}
         \frametitle{Population Inversion and Efficiency}
         \begin{tcolorbox}[colback=red!5!white,colframe=red!75!black,title= Efficiency of the Engine]
             Similar to a classical heat engine, the efficiency of the SSD engine is given by:
             \begin{align*}
-                \eta = \frac{\text{Work Output}}{\text{Heat Input}} = \frac{\hbar \nu}{\hbar \omega_{h}}
+                \eta_{SSD} = \frac{\text{Work Output}}{\text{Heat Input}} = \frac{\hbar \nu}{\hbar \omega_{h}}
             \end{align*} 
         \end{tcolorbox}
+    \end{frame}
 
-
-
-        The condition for population inversion in the SSD model is given by:
+    \begin{frame}
+        \frametitle{Population Inversion and Efficiency}
+        \begin{tcolorbox}[colback=red!5!white,colframe=red!75!black,title= Condition for Population Inversion]
+            The condition for population inversion can be expressed as:
+            \begin{align*}
+                e^{-\hbar \omega_h/k_B T_h} > e^{-\hbar \omega_c/k_B T_c} \\  
+                \Rightarrow \exp\qty(\frac{\hbar \nu}{k_B T_c} \qty(\frac{\omega_h (T_h - T_c)}{\nu T_h} - 1)) > 1
+            \end{align*}
+        One can immediately see that the Carnot efficiency to be defined as $\eta_C = 1 - \frac{T_c}{T_h}$ emerges from this condition. In particular, the condition for population inversion can be rewritten as:
         \begin{align*}
-            N_3 > N_2 \implies  N_3/N_1 > N_2/N_1 .
+            \eta_{SSD} \leq \eta_C
         \end{align*}
+        \end{tcolorbox}
+
+    \end{frame}
+
+    \begin{frame}
+        \frametitle{Engine Efficiency}
+        \begin{tcolorbox}[colback=red!5!white,colframe=red!75!black,title= Second Law of Thermodynamics]
+           We can see another verification of the 2nd Law of Thermodynamics here. The efficiency of the engine is given by $\eta_{SSD} = \frac{\nu}{\omega_h}$, and the condition for population inversion is $\eta_{SSD} \leq \eta_C$. This means that the efficiency of the engine can never exceed the Carnot efficiency, which is a fundamental limit set by the second law of thermodynamics.
+        \end{tcolorbox}
+    \end{frame}
+    \begin{frame}
+        \frametitle{Summary}
+        \begin{itemize}
+            
+            \item An electron in the ground state first absorbs a "hot" photon from the reservoir at $T_{H}$ temperature, and this takes it to level 3.
+                - Heat intake: $Q_{\text{in}} = E_{3}$
+            \item  The electron undergoes stimulated emission, dropping to level 2 and releasing a coherent photon in the cavity as work.
+                - Work outflow: $W = E_{3}-E_{2}$
+            \item The electron drops from level 2 back to the ground state, dumping a "cold" photon into the bath at temperature $T_{C}$.
+                - Heat outflow: $Q_{\text{out}}=E_{2}$
+        \end{itemize}
+    \end{frame}
+    \section{Modern Work}
+
+    \begin{frame}
+        \frametitle{Quantum Heat Engines}
+        \begin{itemize}
+            \item The SSD model was the first example of a quantum heat engine, and it laid the foundation for the field of quantum thermodynamics. Since then, there has been a lot of work done on quantum heat engines, both theoretical and experimental. \pause
+            \item Quantum Heat Engines can be run in reverse as refrigerators, where work is done to cool of Quantum Computers which are very susceptible to thermal noise. \pause
+            \item The SSB Model has been further worked on in the context of the Lindblad Master Equation, which allows for a more rigorous description of the dynamics of the system and the thermodynamic processes involved. 
+        \end{itemize}
+    \end{frame}
+    \begin{frame}
+        \frametitle{Quantum Thermodynamics}
+        \begin{itemize}
+        
+            \item There have also been more  bounds on the engine efficiency , called the Curzon-Ahlborn efficiency, which is given by $\eta_{CA} = 1 - \sqrt{\frac{T_c}{T_h}}$. This efficiency is always less than the Carnot efficiency, and is a more realistic bound for the efficiency of heat engines operating at finite power.
+            \item This limit has been broken in the context of quantum heat engines, where it has been shown that destructive quantum interference effects can allow for efficiencies greater than the Curzon-Ahlborn limit.
+        \end{itemize}
     \end{frame}
 
 
+    \section{Conclusion}
+    \begin{frame}
+        \frametitle{Conclusion}
+        \begin{itemize}
+            \item We started by discussing the three-level MASER system, and how it can be used to amplify microwave radiation through the process of stimulated emission. \pause 
+            \item We then discussed how the three-level MASER system can be interpreted as a quantum heat engine, where the system absorbs heat from a hot reservoir, performs work, and releases heat to a cold reservoir. \pause
+            \item We also discussed the conditions for population inversion and how they relate to the efficiency of the engine, and how the second law of thermodynamics sets a fundamental limit on the efficiency of quantum heat engines. \pause
+            \item Finally, we briefly touched on some of the modern developments in the field of quantum thermodynamics.
+        \end{itemize}
+    \end{frame}
 
 
-    \section{Experimental Realization}
-
-
-    % \begingroup
-    %     \setbeamertemplate{footline}{}
-    %     \themecolor{colorbg}
+    \begingroup
+        \setbeamertemplate{footline}{}
+        \themecolor{colorbg}
         
-    %     \begin{frame}{}
-    %         \centering
-    %         \begin{minipage}{\textwidth}
-    %             \usebeamercolor[fg]{normal text}
-    %             \centering
+        \begin{frame}{}
+            \centering
+            \begin{minipage}{\textwidth}
+                \usebeamercolor[fg]{normal text}
+                \centering
                 
-    %             \Large Thank You! 
-    %         \end{minipage}
-    %     \end{frame}
-    % \endgroup
+                \Large Thank You! 
+            \end{minipage}
+        \end{frame}
+    \endgroup
     
-    % \begin{frame}[allowframebreaks]{References}
-    %     % \bibliographystyle{unsrt}
-    %     \printbibliography
-    % \end{frame}
-    % \QApage
+    \begin{frame}[allowframebreaks]{References}
+        % \bibliographystyle{unsrt}
+        
+
+        \nocite{*}
+\bibliographystyle{plain}
+\bibliography{refs}
+
+    \end{frame}
+    \QApage
     
 
 \end{document}

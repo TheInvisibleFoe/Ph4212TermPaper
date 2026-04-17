@@ -1,5 +1,6 @@
 \beamer@sectionintoc {1}{Introduction}{2}{0}{1}
 \beamer@sectionintoc {2}{MASERs}{7}{0}{2}
-\beamer@sectionintoc {3}{Quantum Heat Engines}{8}{0}{3}
-\beamer@sectionintoc {4}{Scovil Schulz-DuBois(SSD) Model}{9}{0}{4}
-\beamer@sectionintoc {5}{Experimental Realization}{26}{0}{5}
+\beamer@sectionintoc {3}{Quantum Heat Engines}{26}{0}{3}
+\beamer@sectionintoc {4}{Scovil Schulz-DuBois(SSD) Model}{47}{0}{4}
+\beamer@sectionintoc {5}{Modern Work}{65}{0}{5}
+\beamer@sectionintoc {6}{Conclusion}{70}{0}{6}

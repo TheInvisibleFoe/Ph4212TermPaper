@@ -142,7 +142,7 @@ $$
 \Delta N = n\left[ \frac{\Gamma_{32}+\Gamma_{12}-\Gamma_{21}-\Gamma_{23}}{\Gamma_{21}+\Gamma_{23}} \right]
 $$
 
-For the $\Delta N>0$ condition to be satified, we must have:
+For the $\Delta N>0$ condition to be satisfied, we must have:
 $$
 \Gamma_{32}+\Gamma_{12} > \Gamma_{21}+\Gamma_{23} \tag{$1$}
 $$

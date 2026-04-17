@@ -1,0 +1,48 @@
+This is BibTeX, Version 0.99e (TeX Live 2026/Arch Linux)
+Capacity: max_strings=200000, hash_size=200000, hash_prime=170003
+The top-level auxiliary file: pre.aux
+The style file: plain.bst
+Database file #1: refs.bib
+Warning--empty journal in Cangemi2023-vo
+You've used 4 entries,
+            2118 wiz_defined-function locations,
+            523 strings with 4485 characters,
+and the built_in function-call counts, 1142 in all, are:
+= -- 103
+> -- 57
+< -- 0
++ -- 23
+- -- 18
+* -- 74
+:= -- 205
+add.period$ -- 12
+call.type$ -- 4
+change.case$ -- 19
+chr.to.int$ -- 0
+cite$ -- 5
+duplicate$ -- 45
+empty$ -- 91
+format.name$ -- 18
+if$ -- 231
+int.to.chr$ -- 0
+int.to.str$ -- 4
+missing$ -- 6
+newline$ -- 23
+num.names$ -- 8
+pop$ -- 27
+preamble$ -- 1
+purify$ -- 17
+quote$ -- 0
+skip$ -- 29
+stack$ -- 0
+substring$ -- 48
+swap$ -- 3
+text.length$ -- 0
+text.prefix$ -- 0
+top$ -- 0
+type$ -- 12
+warning$ -- 1
+while$ -- 9
+width$ -- 5
+write$ -- 44
+(There was 1 warning)

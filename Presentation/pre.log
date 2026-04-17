@@ -1,4 +1,4 @@
-This is LuaHBTeX, Version 1.24.0 (TeX Live 2026/Arch Linux)  (format=lualatex 2026.3.8)  16 APR 2026 20:05
+This is LuaHBTeX, Version 1.24.0 (TeX Live 2026/Arch Linux)  (format=lualatex 2026.3.8)  17 APR 2026 11:17
  restricted system commands enabled.
  file:line:error style messages enabled.
 **/home/sab/github/TheInvisibleFoe/PH4212TermPaper/Presentation/pre
@@ -880,227 +880,6 @@ File: tikzlibraryfadings.code.tex 2025-08-29 v3.1.11a (3.1.11a)
 File: pgflibraryfadings.code.tex 2025-08-29 v3.1.11a (3.1.11a)
 ))) (/usr/share/texmf-dist/tex/latex/tcolorbox/tcbposter.code.tex
 Library (tcolorbox): 'tcbposter.code.tex' version '6.9.0'
-)) (/usr/share/texmf-dist/tex/latex/biblatex/biblatex.sty
-Package: biblatex 2025/07/10 v3.21 programmable bibliographies (PK/MW)
- (/usr/share/texmf-dist/tex/latex/logreq/logreq.sty
-Package: logreq 2010/08/04 v1.0 xml request logger
-\lrq@indent=\count406
- (/usr/share/texmf-dist/tex/latex/logreq/logreq.def
-File: logreq.def 2010/08/04 v1.0 logreq spec v1.0
-))
-\c@tabx@nest=\count407
-\c@listtotal=\count408
-\c@listcount=\count409
-\c@liststart=\count410
-\c@liststop=\count411
-\c@citecount=\count412
-\c@citetotal=\count413
-\c@multicitecount=\count414
-\c@multicitetotal=\count415
-\c@instcount=\count416
-\c@maxnames=\count417
-\c@minnames=\count418
-\c@maxitems=\count419
-\c@minitems=\count420
-\c@citecounter=\count421
-\c@maxcitecounter=\count422
-\c@savedcitecounter=\count423
-\c@uniquelist=\count424
-\c@uniquename=\count425
-\c@refsection=\count426
-\c@refsegment=\count427
-\c@maxextratitle=\count428
-\c@maxextratitleyear=\count429
-\c@maxextraname=\count430
-\c@maxextradate=\count431
-\c@maxextraalpha=\count432
-\c@abbrvpenalty=\count433
-\c@highnamepenalty=\count434
-\c@lownamepenalty=\count435
-\c@maxparens=\count436
-\c@parenlevel=\count437
-\blx@tempcnta=\count438
-\blx@tempcntb=\count439
-\blx@tempcntc=\count440
-\c@blx@maxsection=\count441
-\blx@maxsegment@0=\count442
-\blx@notetype=\count443
-\blx@parenlevel@text=\count444
-\blx@parenlevel@foot=\count445
-\blx@sectionciteorder@0=\count446
-\blx@sectionciteorderinternal@0=\count447
-\blx@entrysetcounter=\count448
-\blx@biblioinstance=\count449
-\labelnumberwidth=\skip70
-\labelalphawidth=\skip71
-\biblabelsep=\skip72
-\bibitemsep=\skip73
-\bibnamesep=\skip74
-\bibinitsep=\skip75
-\bibparsep=\skip76
-\bibhang=\skip77
-\blx@bcfin=\read5
-\blx@bcfout=\write5
-\blx@langwohyphens=\language2
-\c@mincomprange=\count450
-\c@maxcomprange=\count451
-\c@mincompwidth=\count452
-Package biblatex Info: Trying to load biblatex default data model...
-Package biblatex Info: ... file 'blx-dm.def' found.
- (/usr/share/texmf-dist/tex/latex/biblatex/blx-dm.def
-File: blx-dm.def 2025/07/10 v3.21 biblatex datamodel (PK/MW)
-)
-Package biblatex Info: Trying to load biblatex custom data model...
-Package biblatex Info: ... file 'biblatex-dm.cfg' not found.
-\c@afterword=\count453
-\c@savedafterword=\count454
-\c@annotator=\count455
-\c@savedannotator=\count456
-\c@author=\count457
-\c@savedauthor=\count458
-\c@bookauthor=\count459
-\c@savedbookauthor=\count460
-\c@commentator=\count461
-\c@savedcommentator=\count462
-\c@editor=\count463
-\c@savededitor=\count464
-\c@editora=\count465
-\c@savededitora=\count466
-\c@editorb=\count467
-\c@savededitorb=\count468
-\c@editorc=\count469
-\c@savededitorc=\count470
-\c@foreword=\count471
-\c@savedforeword=\count472
-\c@holder=\count473
-\c@savedholder=\count474
-\c@introduction=\count475
-\c@savedintroduction=\count476
-\c@namea=\count477
-\c@savednamea=\count478
-\c@nameb=\count479
-\c@savednameb=\count480
-\c@namec=\count481
-\c@savednamec=\count482
-\c@translator=\count483
-\c@savedtranslator=\count484
-\c@shortauthor=\count485
-\c@savedshortauthor=\count486
-\c@shorteditor=\count487
-\c@savedshorteditor=\count488
-\c@labelname=\count489
-\c@savedlabelname=\count490
-\c@institution=\count491
-\c@savedinstitution=\count492
-\c@lista=\count493
-\c@savedlista=\count494
-\c@listb=\count495
-\c@savedlistb=\count496
-\c@listc=\count497
-\c@savedlistc=\count498
-\c@listd=\count499
-\c@savedlistd=\count500
-\c@liste=\count501
-\c@savedliste=\count502
-\c@listf=\count503
-\c@savedlistf=\count504
-\c@location=\count505
-\c@savedlocation=\count506
-\c@organization=\count507
-\c@savedorganization=\count508
-\c@origlocation=\count509
-\c@savedoriglocation=\count510
-\c@origpublisher=\count511
-\c@savedorigpublisher=\count512
-\c@publisher=\count513
-\c@savedpublisher=\count514
-\c@language=\count515
-\c@savedlanguage=\count516
-\c@origlanguage=\count517
-\c@savedoriglanguage=\count518
-\c@pageref=\count519
-\c@savedpageref=\count520
-\shorthandwidth=\skip78
-\shortjournalwidth=\skip79
-\shortserieswidth=\skip80
-\shorttitlewidth=\skip81
-\shortauthorwidth=\skip82
-\shorteditorwidth=\skip83
-\locallabelnumberwidth=\skip84
-\locallabelalphawidth=\skip85
-\localshorthandwidth=\skip86
-\localshortjournalwidth=\skip87
-\localshortserieswidth=\skip88
-\localshorttitlewidth=\skip89
-\localshortauthorwidth=\skip90
-\localshorteditorwidth=\skip91
-Package biblatex Info: Trying to load enhanced support for Unicode engines...
-Package biblatex Info: ... file 'blx-unicode.def' found.
- (/usr/share/texmf-dist/tex/latex/biblatex/blx-unicode.def)
-Package biblatex Info: Trying to load compatibility code...
-Package biblatex Info: ... file 'blx-compat.def' found.
- (/usr/share/texmf-dist/tex/latex/biblatex/blx-compat.def
-File: blx-compat.def 2025/07/10 v3.21 biblatex compatibility (PK/MW)
-)
-Package biblatex Info: Trying to load generic definitions...
-Package biblatex Info: ... file 'biblatex.def' found.
- (/usr/share/texmf-dist/tex/latex/biblatex/biblatex.def
-File: biblatex.def 2025/07/10 v3.21 biblatex compatibility (PK/MW)
-\c@textcitecount=\count521
-\c@textcitetotal=\count522
-\c@textcitemaxnames=\count523
-\c@biburlbigbreakpenalty=\count524
-\c@biburlbreakpenalty=\count525
-\c@biburlnumpenalty=\count526
-\c@biburlucpenalty=\count527
-\c@biburllcpenalty=\count528
-\biburlbigskip=\muskip19
-\biburlnumskip=\muskip20
-\biburlucskip=\muskip21
-\biburllcskip=\muskip22
-\c@smartand=\count529
-)
-Package biblatex Info: Trying to load bibliography style 'numeric'...
-Package biblatex Info: ... file 'numeric.bbx' found.
- (/usr/share/texmf-dist/tex/latex/biblatex/bbx/numeric.bbx
-File: numeric.bbx 2025/07/10 v3.21 biblatex bibliography style (PK/MW)
-Package biblatex Info: Trying to load bibliography style 'standard'...
-Package biblatex Info: ... file 'standard.bbx' found.
- (/usr/share/texmf-dist/tex/latex/biblatex/bbx/standard.bbx
-File: standard.bbx 2025/07/10 v3.21 biblatex bibliography style (PK/MW)
-\c@bbx:relatedcount=\count530
-\c@bbx:relatedtotal=\count531
-))
-Package biblatex Info: Trying to load citation style 'numeric'...
-Package biblatex Info: ... file 'numeric.cbx' found.
- (/usr/share/texmf-dist/tex/latex/biblatex/cbx/numeric.cbx
-File: numeric.cbx 2025/07/10 v3.21 biblatex citation style (PK/MW)
-Package biblatex Info: Redefining '\cite'.
-Package biblatex Info: Redefining '\parencite'.
-Package biblatex Info: Redefining '\footcite'.
-Package biblatex Info: Redefining '\footcitetext'.
-Package biblatex Info: Redefining '\smartcite'.
-Package biblatex Info: Redefining '\supercite'.
-Package biblatex Info: Redefining '\textcite'.
-Package biblatex Info: Redefining '\textcites'.
-Package biblatex Info: Redefining '\cites'.
-Package biblatex Info: Redefining '\parencites'.
-Package biblatex Info: Redefining '\smartcites'.
-)
-Package biblatex Info: Trying to load configuration file...
-Package biblatex Info: ... file 'biblatex.cfg' found.
- (/usr/share/texmf-dist/tex/latex/biblatex/biblatex.cfg
-File: biblatex.cfg 
-)
-Package biblatex Info: LuaTeX detected.
-(biblatex)             Assuming input encoding 'utf8'.
-Package biblatex Info: Document encoding is UTF8 ....
-Package biblatex Info: ... and expl3
-(biblatex)             2026-01-19 L3 programming layer (loader) 
-(biblatex)             is new enough (at least 2020/04/06),
-(biblatex)             setting 'casechanger=expl3'.
- (/usr/share/texmf-dist/tex/latex/biblatex/blx-case-expl3.sty
-Package: blx-case-expl3 2025/07/10 v3.21 expl3 case changing code for biblatex
 )) (/usr/share/texmf-dist/tex/latex/sfmath/sfmath.sty
 Package: sfmath 2007/08/27 v0.8 sans serif maths
 LaTeX Font Info:    Overwriting symbol font `operators' in version `normal'
@@ -1164,64 +943,62 @@ LaTeX Font Info:    Overwriting math alphabet `\mathsf' in version `bold'
 LaTeX Font Info:    Overwriting math alphabet `\mathsl' in version `bold'
 (Font)                  OT1/cmss/m/sl --> OT1/cmss/m/sl on input line 466.
 )
-\mylen=\skip92
-LaTeX Font Info:    Trying to load font information for OML+lmm on input line 18.
+\mylen=\skip70
+LaTeX Font Info:    Trying to load font information for OML+lmm on input line 19.
  (/usr/share/texmf-dist/tex/latex/lm/omllmm.fd
 File: omllmm.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
 )
-LaTeX Font Info:    Trying to load font information for OMS+lmsy on input line 18.
+LaTeX Font Info:    Trying to load font information for OMS+lmsy on input line 19.
  (/usr/share/texmf-dist/tex/latex/lm/omslmsy.fd
 File: omslmsy.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
 )
-LaTeX Font Info:    Trying to load font information for OMX+lmex on input line 18.
+LaTeX Font Info:    Trying to load font information for OMX+lmex on input line 19.
  (/usr/share/texmf-dist/tex/latex/lm/omxlmex.fd
 File: omxlmex.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
 )
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <10.95> on input line 18.
+(Font)              <10.95> on input line 19.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <8> on input line 18.
+(Font)              <8> on input line 19.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <6> on input line 18.
-LaTeX Font Info:    Trying to load font information for U+msa on input line 18.
+(Font)              <6> on input line 19.
+LaTeX Font Info:    Trying to load font information for U+msa on input line 19.
  (/usr/share/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Trying to load font information for U+msb on input line 18.
+LaTeX Font Info:    Trying to load font information for U+msb on input line 19.
  (/usr/share/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
-LaTeX Font Info:    Trying to load font information for OT1+mathkerncmss on input line 18.
+LaTeX Font Info:    Trying to load font information for OT1+mathkerncmss on input line 19.
  (/usr/share/texmf-dist/tex/latex/sansmathaccent/ot1mathkerncmss.fd
 File: ot1mathkerncmss.fd 2020/01/31 Fontinst v1.933 font definitions for OT1/mathkerncmss.
 )
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <5> on input line 18.
-\@quotelevel=\count532
-\@quotereset=\count533
+(Font)              <5> on input line 19.
  (./pre.aux)
 \openout1 = pre.aux
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 33.
-LaTeX Font Info:    ... okay on input line 33.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 33.
-LaTeX Font Info:    ... okay on input line 33.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 33.
-LaTeX Font Info:    ... okay on input line 33.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 33.
-LaTeX Font Info:    ... okay on input line 33.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 33.
-LaTeX Font Info:    ... okay on input line 33.
-LaTeX Font Info:    Checking defaults for TU/lmr/m/n on input line 33.
-LaTeX Font Info:    ... okay on input line 33.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 33.
-LaTeX Font Info:    ... okay on input line 33.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 33.
-LaTeX Font Info:    ... okay on input line 33.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 33.
-LaTeX Font Info:    ... okay on input line 33.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 33.
-LaTeX Font Info:    ... okay on input line 33.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 34.
+LaTeX Font Info:    ... okay on input line 34.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 34.
+LaTeX Font Info:    ... okay on input line 34.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 34.
+LaTeX Font Info:    ... okay on input line 34.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 34.
+LaTeX Font Info:    ... okay on input line 34.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 34.
+LaTeX Font Info:    ... okay on input line 34.
+LaTeX Font Info:    Checking defaults for TU/lmr/m/n on input line 34.
+LaTeX Font Info:    ... okay on input line 34.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 34.
+LaTeX Font Info:    ... okay on input line 34.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 34.
+LaTeX Font Info:    ... okay on input line 34.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 34.
+LaTeX Font Info:    ... okay on input line 34.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 34.
+LaTeX Font Info:    ... okay on input line 34.
 
 *geometry* driver: auto-detecting
 *geometry* detected driver: luatex
@@ -1259,16 +1036,16 @@ LaTeX Font Info:    ... okay on input line 33.
 
 (/usr/share/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count534
+\scratchcounter=\count406
 \scratchdimen=\dimen336
 \scratchbox=\box101
-\nofMPsegments=\count535
-\nofMParguments=\count536
+\nofMPsegments=\count407
+\nofMParguments=\count408
 \everyMPshowfont=\toks53
-\MPscratchCnt=\count537
+\MPscratchCnt=\count409
 \MPscratchDim=\dimen337
-\MPnumerator=\count538
-\makeMPintoPDFobject=\count539
+\MPnumerator=\count410
+\makeMPintoPDFobject=\count411
 \everyMPtoPDFconversion=\toks54
 ) (/usr/share/texmf-dist/tex/latex/epstopdf-pkg/epstopdf-base.sty
 Package: epstopdf-base 2020-01-24 v2.11 Base part for package epstopdf
@@ -1282,11 +1059,11 @@ Package grfext Info: Graphics extension search list:
  (/usr/share/texmf-dist/tex/latex/latexconfig/epstopdf-sys.cfg
 File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Live
 ))
-Package hyperref Info: Link coloring OFF on input line 33.
+Package hyperref Info: Link coloring OFF on input line 34.
  (./pre.out) (./pre.out)
-\@outlinefile=\write6
+\@outlinefile=\write5
 
-\openout6 = pre.out
+\openout5 = pre.out
  (/usr/share/texmf-dist/tex/latex/translator/translator-basic-dictionary-English.dict
 Dictionary: translator-basic-dictionary, Language: English 
 ) (/usr/share/texmf-dist/tex/latex/translator/translator-bibliography-dictionary-English.dict
@@ -1300,40 +1077,23 @@ Dictionary: translator-numbers-dictionary, Language: English
 ) (/usr/share/texmf-dist/tex/latex/translator/translator-theorem-dictionary-English.dict
 Dictionary: translator-theorem-dictionary, Language: English 
 )
-\c@lstlisting=\count540
+\c@lstlisting=\count412
 Package caption Info: Begin \AtBeginDocument code.
 Package caption Info: End \AtBeginDocument code.
-Package biblatex Info: Trying to load language 'english'...
-Package biblatex Info: ... file 'english.lbx' found.
- (/usr/share/texmf-dist/tex/latex/biblatex/lbx/english.lbx
-File: english.lbx 2025/07/10 v3.21 biblatex localization (PK/MW)
-)
-Package biblatex Info: LuaTeX detected.
-(biblatex)             Assuming input encoding 'utf8'.
-Package biblatex Info: Automatic encoding selection.
-(biblatex)             Assuming data encoding 'utf8'.
+ (./pre.nav)
 
-\openout5 = pre.bcf
-Package biblatex Info: Trying to load bibliographic data...
-Package biblatex Info: ... file 'pre.bbl' not found.
-
-No file pre.bbl.
-Package biblatex Info: Reference section=0 on input line 33.
-Package biblatex Info: Reference segment=0 on input line 33.
-(./pre.nav)
-
-Package hyperref Warning: Suppressing link with empty target on input line 36.
+Package hyperref Warning: Suppressing link with empty target on input line 37.
 
 
-Package hyperref Warning: Suppressing link with empty target on input line 36.
+Package hyperref Warning: Suppressing link with empty target on input line 37.
 
 
-Package hyperref Warning: Suppressing link with empty target on input line 36.
+Package hyperref Warning: Suppressing link with empty target on input line 37.
 
-<images/paper.jpg, id=71, 1927.2pt x 1084.05pt>
+<images/paper.jpg, id=75, 1927.2pt x 1084.05pt>
 File: images/paper.jpg Graphic file (type jpg)
 <use images/paper.jpg>
-Package luatex.def Info: images/paper.jpg  used on input line 36.
+Package luatex.def Info: images/paper.jpg  used on input line 37.
 (luatex.def)             Requested size: 455.2446pt x 256.0748pt.
 [1
 
@@ -1349,9 +1109,9 @@ Package luatex.def Info: images/paper.jpg  used on input line 36.
 
 ] (./pre.toc) [7
 
-] (./pre.toc) [8
+] [8
 
-] (./pre.toc) [9
+] [9
 
 ] [10
 
@@ -1371,64 +1131,217 @@ Package luatex.def Info: images/paper.jpg  used on input line 36.
 
 ] [18
 
-] [19
+]
+Overfull \vbox (6.54372pt too high) detected at line 149
+ []
 
-] [20
+[19
 
 ]
-<images/ssd.png, id=255, 933.4875pt x 496.85625pt>
-File: images/ssd.png Graphic file (type png)
-<use images/ssd.png>
-Package luatex.def Info: images/ssd.png  used on input line 98.
-(luatex.def)             Requested size: 199.1693pt x 106.0032pt.
- [21
+Overfull \vbox (6.54372pt too high) detected at line 149
+ []
 
-<./images/ssd.png>] [22
+[20
 
-] [23
+]
+Overfull \vbox (6.54372pt too high) detected at line 149
+ []
 
-] [24
+[21
 
-] [25
+]
+Overfull \vbox (6.68414pt too high) detected at line 159
+ []
+
+[22
+
+]
+Overfull \vbox (6.68414pt too high) detected at line 159
+ []
+
+[23
+
+]
+Overfull \vbox (6.68414pt too high) detected at line 159
+ []
+
+[24
+
+]
+Overfull \vbox (6.68414pt too high) detected at line 159
+ []
+
+[25
 
 ] (./pre.toc) [26
 
+] [27
+
+] [28
+
+] [29
+
+] [30
+
+] [31
+
+] [32
+
+] [33
+
+] [34
+
+] [35
+
+] [36
+
+] [37
+
+] [38
+
+] [39
+
+] [40
+
+] [41
+
+] [42
+
 ]
-\tf@nav=\write7
+Overfull \vbox (6.54752pt too high) detected at line 246
+ []
 
-\openout7 = pre.nav
-\tf@toc=\write8
+[43
 
-\openout8 = pre.toc
-\tf@snm=\write9
+]
+Overfull \vbox (6.54752pt too high) detected at line 246
+ []
 
-\openout9 = pre.snm
+[44
+
+]
+Overfull \vbox (6.54752pt too high) detected at line 246
+ []
+
+[45
+
+] [46
+
+] (./pre.toc) [47
+
+] [48
+
+] [49
+
+] [50
+
+] [51
+
+] [52
+
+] [53
+
+] [54
+
+] [55
+
+] [56
+
+]
+<images/ssd.png, id=526, 933.4875pt x 496.85625pt>
+File: images/ssd.png Graphic file (type png)
+<use images/ssd.png>
+Package luatex.def Info: images/ssd.png  used on input line 297.
+(luatex.def)             Requested size: 199.1693pt x 106.0032pt.
+ [57
+
+<./images/ssd.png>] [58
+
+] [59
+
+] [60
+
+] [61
+
+]
+Overfull \vbox (1.28857pt too high) detected at line 337
+ []
+
+[62
+
+] [63
+
+] [64
+
+] (./pre.toc) [65
+
+] [66
+
+] [67
+
+] [68
+
+] [69
+
+] (./pre.toc) [70
+
+] [71
+
+] [72
+
+] [73
+
+] [74
+
+] [75
+
+] (./pre.bbl
+LaTeX Font Info:    Font shape `TU/lmss/m/it' in size <10.95> not available
+(Font)              Font shape `TU/lmss/m/sl' tried instead on input line 5.
+) [76
+
+</usr/share/texmf-dist/tex/latex/beamer/beamericonarticle.pdf>]
+LaTeX Font Info:    External font `lmex10' loaded for size
+(Font)              <24.88> on input line 413.
+LaTeX Font Info:    External font `lmex10' loaded for size
+(Font)              <20.74> on input line 413.
+LaTeX Font Info:    External font `lmex10' loaded for size
+(Font)              <17.28> on input line 413.
+ [77
+
+]
+\tf@nav=\write6
+
+\openout6 = pre.nav
+\tf@toc=\write7
+
+\openout7 = pre.toc
+\tf@snm=\write8
+
+\openout8 = pre.snm
  (./pre.aux)
  ***********
 LaTeX2e <2025-11-01>
 L3 programming layer <2026-01-19>
  ***********
 Package rerunfilecheck Info: File `pre.out' has not changed.
-(rerunfilecheck)             Checksum: 09BBBF17D02BB4114F74B1DBEB649055;701.
-Package logreq Info: Writing requests to 'pre.run.xml'.
-
-\openout1 = pre.run.xml
+(rerunfilecheck)             Checksum: AFC1D72EBB42EB1DE6D9E8580C1E9B94;729.
 )
 
 Here is how much of LuaTeX's memory you used:
- 42583 strings out of 476076
- 100000,1977958 words of node,token memory allocated
- 4607 words of node memory still in use:
-   59 hlist, 13 vlist, 17 rule, 22 disc, 8 local_par, 12 math, 75 glue, 19 kern, 22 penalty, 156 glyph, 193 attribute, 74 glue_spec, 193 attribute_list, 4 write, 32 pdf_literal, 5 pdf_start_link, 5 pdf_end_link, 5 pdf_action, 62 pdf_colorstack nodes
-   avail lists: 1:2,2:425,3:195,4:143,5:158,6:20,7:2324,8:49,9:520,10:17,11:179
- 63780 multiletter control sequences out of 65536+600000
- 82 fonts using 5940879 bytes
- 128i,16n,116p,749b,801s stack positions out of 10000i,1000n,20000p,200000b,200000s
-{/usr/share/texmf-dist/fonts/enc/dvips/lm/lm-mathit.enc}{/usr/share/texmf-dist/fonts/enc/dvips/lm/lm-mathsy.enc}</usr/share/texmf-dist/fonts/opentype/public/lm/lmroman8-regular.otf></usr/share/texmf-dist/fonts/opentype/public/lm/lmroman10-regular.otf></usr/share/texmf-dist/fonts/opentype/public/lm/lmroman9-regular.otf></usr/share/texmf-dist/fonts/opentype/public/lm/lmroman12-bold.otf></usr/share/texmf-dist/fonts/opentype/public/lm/lmsans10-regular.otf></usr/share/texmf-dist/fonts/opentype/public/lm/lmsans8-regular.otf></usr/share/texmf-dist/fonts/opentype/public/lm/lmromancaps10-regular.otf></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmss10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmss8.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmssi10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmssi8.pfb></usr/share/texmf-dist/fonts/type1/public/lm/lmmi10.pfb></usr/share/texmf-dist/fonts/type1/public/lm/lmmi8.pfb></usr/share/texmf-dist/fonts/type1/public/lm/lmsy10.pfb></usr/share/texmf-dist/fonts/type1/public/lm/lmsy8.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/symbols/msam10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb>
-Output written on pre.pdf (26 pages, 470856 bytes).
+ 35875 strings out of 476076
+ 100000,1373583 words of node,token memory allocated
+ 2769 words of node memory still in use:
+   47 hlist, 7 vlist, 15 rule, 6 disc, 5 local_par, 4 math, 47 glue, 10 kern, 14 penalty, 3 sub_mlist, 68 glyph, 132 attribute, 64 glue_spec, 132 attribute_list, 4 write, 24 pdf_literal, 30 pdf_colorstack nodes
+   avail lists: 2:549,3:231,4:218,5:262,6:44,7:3710,8:49,9:557,10:21,11:279
+ 57021 multiletter control sequences out of 65536+600000
+ 126 fonts using 9086215 bytes
+ 128i,16n,116p,579b,680s stack positions out of 10000i,1000n,20000p,200000b,200000s
+</usr/share/texmf-dist/fonts/opentype/public/lm/lmsans12-oblique.otf></usr/share/texmf-dist/fonts/opentype/public/lm/lmsans10-oblique.otf></usr/share/texmf-dist/fonts/opentype/public/lm/lmsans12-regular.otf>{/usr/share/texmf-dist/fonts/enc/dvips/lm/lm-mathit.enc}{/usr/share/texmf-dist/fonts/enc/dvips/lm/lm-mathsy.enc}{/usr/share/texmf-dist/fonts/enc/dvips/lm/lm-mathex.enc}</usr/share/texmf-dist/fonts/opentype/public/lm/lmsans10-bold.otf></usr/share/texmf-dist/fonts/opentype/public/lm/lmroman8-regular.otf></usr/share/texmf-dist/fonts/opentype/public/lm/lmroman10-regular.otf></usr/share/texmf-dist/fonts/opentype/public/lm/lmroman9-regular.otf></usr/share/texmf-dist/fonts/opentype/public/lm/lmroman12-bold.otf></usr/share/texmf-dist/fonts/opentype/public/lm/lmsans10-regular.otf></usr/share/texmf-dist/fonts/opentype/public/lm/lmsans8-regular.otf></usr/share/texmf-dist/fonts/opentype/public/lm/lmromancaps10-regular.otf></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmss10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmss17.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmss8.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmssbx10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmssi10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmssi8.pfb></usr/share/texmf-dist/fonts/type1/public/lm/lmex10.pfb></usr/share/texmf-dist/fonts/type1/public/lm/lmmi10.pfb></usr/share/texmf-dist/fonts/type1/public/lm/lmmi8.pfb></usr/share/texmf-dist/fonts/type1/public/lm/lmsy10.pfb></usr/share/texmf-dist/fonts/type1/public/lm/lmsy8.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/symbols/msam10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb>
+Output written on pre.pdf (77 pages, 590910 bytes).
 
-PDF statistics: 389 PDF objects out of 1000 (max. 8388607)
- 289 compressed objects within 3 object streams
- 58 named destinations out of 1000 (max. 1048576)
- 306 words of extra memory for PDF output out of 10000 (max. 100000000)
+PDF statistics: 825 PDF objects out of 1000 (max. 8388607)
+ 652 compressed objects within 7 object streams
+ 165 named destinations out of 1000 (max. 1048576)
+ 314 words of extra memory for PDF output out of 10000 (max. 100000000)
 
