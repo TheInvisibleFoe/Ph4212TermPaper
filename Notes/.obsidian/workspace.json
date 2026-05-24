@@ -8,17 +8,73 @@
         "type": "tabs",
         "children": [
           {
-            "id": "72c1642bb51e96e4",
+            "id": "710e4b4af729092e",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Stimulated Emission.md",
+                "file": "Evolutionary Dynamics/Moran Process in Finite Populations.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Stimulated Emission"
+              "title": "Moran Process in Finite Populations"
+            }
+          },
+          {
+            "id": "6c71e9dc6f1c15bf",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Evolutionary Graph Theory.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "Evolutionary Graph Theory"
+            }
+          },
+          {
+            "id": "2f5a35ab565589db",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Fermi Update RUle.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "Fermi Update RUle"
+            }
+          },
+          {
+            "id": "7beddb3333d738d5",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Evolutionary Dynamics/ESS in finite populations.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "ESS in finite populations"
+            }
+          },
+          {
+            "id": "14ee02a075bbf55b",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Evolutionary Dynamics/Risk Dominance.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "Risk Dominance"
             }
           }
         ]
@@ -165,7 +221,8 @@
               "title": "Outline of Stimulated Emission"
             }
           }
-        ]
+        ],
+        "currentTab": 3
       }
     ],
     "direction": "horizontal",
@@ -180,21 +237,41 @@
       "daily-notes:Open today's daily note": false,
       "templates:Insert template": false,
       "command-palette:Open command palette": false,
-      "bases:Create new base": false
+      "bases:Create new base": false,
+      "obsidian-matrix:Obsidian Matrix": false
     }
   },
-  "active": "72c1642bb51e96e4",
+  "active": "710e4b4af729092e",
   "lastOpenFiles": [
-    "Quantum Heat and Work - TLS Example.md",
-    "Quantum Heat and Work.md",
-    "Spontaneous Emission.md",
-    "Maser.md",
-    "Stimulated Emission.md",
-    "Three-Level Masers as Heat Engines, Scovil Schulz-Dubois.md",
-    "Open Quantum Systems and Thermalization.md",
-    "Quantum Thermodynamics of Three-Level Masers.md",
-    "Quantum Engines and Refridgerators, Cangemi et al.md",
-    "The Lindblad Master Equation.md",
-    "Carnot Theorem.md"
+    "Evolutionary Graph Theory.md",
+    "Evolutionary Dynamics/Moran Process in Finite Populations.md",
+    "Fermi Update RUle.md",
+    "Evolutionary Dynamics/ESS in finite populations.md",
+    "Evolutionary Dynamics/Risk Dominance.md",
+    "Pasted image 20260503051619.png",
+    "Pasted image 20260503050026.png",
+    "Evolutionary Dynamics/Fitness Landscapes.md",
+    "Pasted image 20260502231035.png",
+    "Evolutionary Dynamics/Rate Equations.md",
+    "MASER Topic notes/Carnot Theorem.md",
+    "Pasted image 20260502051009.png",
+    "Evolutionary Dynamics/Deterministic Evolution.md",
+    "Pasted image 20260502041636.png",
+    "Pasted image 20260502050143.png",
+    "Pasted image 20260502042620.png",
+    "Properties 1.md",
+    "MASER Topic notes/Heat Engine.md",
+    "Evolutionary Dynamics",
+    "MASER Topic notes/Spontaneous Emission.md",
+    "MASER Topic notes",
+    "MASER Topic notes/Stimulated Emission.md",
+    "MASER Topic notes/Quantum Heat and Work - TLS Example.md",
+    "MASER Topic notes/Quantum Heat and Work.md",
+    "MASER Topic notes/Maser.md",
+    "MASER Topic notes/Three-Level Masers as Heat Engines, Scovil Schulz-Dubois.md",
+    "MASER Topic notes/Open Quantum Systems and Thermalization.md",
+    "MASER Topic notes/Quantum Thermodynamics of Three-Level Masers.md",
+    "MASER Topic notes/Quantum Engines and Refridgerators, Cangemi et al.md",
+    "MASER Topic notes/The Lindblad Master Equation.md"
   ]
 }
